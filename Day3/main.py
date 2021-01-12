@@ -183,37 +183,88 @@
 
 
 # 🚨 Don't change the code below 👇
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n")
+# name2 = input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this line 👇
 
 
-combinedString = name1 + name2
-lowString = combinedString.lower()
+# combinedString = name1 + name2
+# lowString = combinedString.lower()
 
-t = lowString.count("t")
-r = lowString.count("r")
-u = lowString.count("u")
-e = lowString.count("e")
+# t = lowString.count("t")
+# r = lowString.count("r")
+# u = lowString.count("u")
+# e = lowString.count("e")
 
-true = t + r + u + e
+# true = t + r + u + e
 
-l = lowString.count("l")
-o = lowString.count("o")
-v = lowString.count("v")
-e = lowString.count("e")
+# l = lowString.count("l")
+# o = lowString.count("o")
+# v = lowString.count("v")
+# e = lowString.count("e")
 
-love = l + o + v + e
+# love = l + o + v + e
 
-loveScore = int(str(true) + str(love))
+# loveScore = int(str(true) + str(love))
 
-if loveScore <= 10 or loveScore >= 90:
-    print(f"Your score is {loveScore}, you go together like coke and mentos.")
-elif loveScore >= 40 and loveScore <= 50:
-    print(f"Your score is {loveScore}, you are alright together.")
+# if loveScore <= 10 or loveScore >= 90:
+#     print(f"Your score is {loveScore}, you go together like coke and mentos.")
+# elif loveScore >= 40 and loveScore <= 50:
+#     print(f"Your score is {loveScore}, you are alright together.")
+# else:
+#     print(f"You score is {loveScore} Lower than average.")
+# print(loveScore)
+
+
+################## TEASURE ISLAND GAME #############
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+level1 = input("Which way you want to go? Left or RIght?").lower()
+if level1 == "left":
+    level2 = input(
+        "There is a lake. Are you going to wait for the boat or swim?").lower()
+    if level2 == "wait":
+        level3 = input(
+            "A house with 3 doors. Pick a color. Red.. Yellow.. Blue..").lower()
+        if level3 == "red":
+            print("GameOver")
+        elif level3 == "yellow":
+            print("You Win!")
+        elif level3 == "blue":
+            print("Monster!!!")
+        else:
+            print("GameOver!")
+    else:
+        print("Eaten by CROCODILES!")
 else:
-    print(f"You score is {loveScore} Lower than average.")
-print(loveScore)
+    print("Fall into a hole.")
+
+
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
