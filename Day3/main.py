@@ -79,29 +79,67 @@
 #     print("NOT Leap Year!")
 
 
-# ########################MULTIPLE IF's ########################3
+# #########MULTIPLE IF's FINAL RIDE TICKETS#########
 
-print("Welcome to the roller coaster ride.")
+# print("Welcome to the roller coaster ride.")
 
-height = int(input("What is your height? "))
+# height = int(input("What is your height? "))
+# price = 0
+
+# if height >= 120:
+#     print("Yes you can ride.")
+#     age = int(input("How old are you? "))
+#     if age < 12:
+#         price = 5
+#         print("Child $5")
+#     elif age >= 12 or age <= 18:
+#         price = 7
+#         print("youth tickets $7")
+#     else:
+#         price = 12
+#         print("Adult tickets $12")
+#     pictures = input("Do you want pictures? Y/N")
+#     if pictures == "Y":
+#         print(f"Total price for ticket is ${price + 3} and $3 for the photo")
+#     else:
+#         print(f"Total price for ticket only is ${price}")
+# else:
+#     print("No you are NOT tall enough.")
+
+
+# PIZZA ORDER ###################33333
+
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+
+size = size.upper()
+add_pepperoni = add_pepperoni.upper()
+extra_cheese = extra_cheese.upper()
 price = 0
 
-if height >= 120:
-    print("Yes you can ride.")
-    age = int(input("How old are you? "))
-    if age < 12:
-        price = 5
-        print("Child $5")
-    elif age >= 12 or age <= 18:
-        price = 7
-        print("youth tickets $7")
-    else:
-        price = 12
-        print("Adult tickets $12")
-    pictures = input("Do you want pictures? Y/N")
-    if pictures == "Y":
-        print(f"Total price for ticket is ${price + 3} and $3 for the photo")
-    else:
-        print(f"Total price for ticket only is ${price}")
+
+if size == "S":
+    price = 15
+    if add_pepperoni == "Y":
+        price += 2
+elif size == "M":
+    price = 20
+    if add_pepperoni == "Y":
+        price += 3
+elif size == "L":
+    price = 25
+    if add_pepperoni == "Y":
+        price += 3
 else:
-    print("No you are NOT tall enough.")
+    print("Choose a valid size.")
+
+if extra_cheese == "Y":
+    price += 1
+
+print(f"Your final bill is ${price}")
