@@ -147,33 +147,73 @@
 
 ################# Roller Coaster Mid-Life ################
 
-print("Welcome to the roller coaster ride.")
+# print("Welcome to the roller coaster ride.")
 
-height = int(input("What is your height? "))
-price = 0
-pictures = input("Do you want pictures? Y/N ")
-pictures = pictures.upper()
+# height = int(input("What is your height? "))
+# price = 0
+# pictures = input("Do you want pictures? Y/N ")
+# pictures = pictures.upper()
 
-if height >= 120:
-    print("Yes you can ride.")
-    age = int(input("How old are you? "))
-    if age < 12:
-        price = 5
-        print("Child $5")
-    elif age >= 12 and age <= 18:
-        price = 7
-        print("youth tickets $7")
-    elif age >= 45 and age <= 55:
-        price = 0
-    else:
-        price = 12
-        print("Adult tickets $12")
+# if height >= 120:
+#     print("Yes you can ride.")
+#     age = int(input("How old are you? "))
+#     if age < 12:
+#         price = 5
+#         print("Child $5")
+#     elif age >= 12 and age <= 18:
+#         price = 7
+#         print("youth tickets $7")
+#     elif age >= 45 and age <= 55:
+#         price = 0
+#     else:
+#         price = 12
+#         print("Adult tickets $12")
 
-    if pictures == "Y":
-        price += 3
+#     if pictures == "Y":
+#         price += 3
 
-    print(f"Total price is ${price}.")
+#     print(f"Total price is ${price}.")
 
 
+# else:
+#     print("No you are NOT tall enough.")
+
+
+###############33 LOVE SCORE #####################
+
+
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+
+
+combinedString = name1 + name2
+lowString = combinedString.lower()
+
+t = lowString.count("t")
+r = lowString.count("r")
+u = lowString.count("u")
+e = lowString.count("e")
+
+true = t + r + u + e
+
+l = lowString.count("l")
+o = lowString.count("o")
+v = lowString.count("v")
+e = lowString.count("e")
+
+love = l + o + v + e
+
+loveScore = int(str(true) + str(love))
+
+if loveScore <= 10 or loveScore >= 90:
+    print(f"Your score is {loveScore}, you go together like coke and mentos.")
+elif loveScore >= 40 and loveScore <= 50:
+    print(f"Your score is {loveScore}, you are alright together.")
 else:
-    print("No you are NOT tall enough.")
+    print(f"You score is {loveScore} Lower than average.")
+print(loveScore)
